@@ -1,4 +1,5 @@
 body {
+	font-family: Tahoma, Geneva, Verdana;
 	background-color: black;
 	padding: 0;
 	margin: 0;
@@ -7,13 +8,13 @@ body {
 #page {
 	width: 21cm;
 	height: 29.7cm;
-	font-family: Tahoma, Geneva, Verdana;
 	background-color: white;
 	color: #403D3A;
 	position: absolute;
 	left: 50%;
 	margin-left: -10.5cm;
 	/*text-align:justify;*/
+	padding-top: 20px;
 }
 
 a {
@@ -40,19 +41,19 @@ a {
 }
 
 #phone {
-	list-style-image: url('phone_2.png')
+	list-style-image: url('../img/phone_2.png')
 }
 
 #address {
-	list-style-image: url('home.png')
+	list-style-image: url('../img/home.png')
 }
 
 #mail {
-	list-style-image: url('mail.png')
+	list-style-image: url('../img/mail.png')
 }
 
 #info {
-	list-style-image: url('user_silhouette.png')
+	list-style-image: url('../img/user_silhouette.png')
 }
 
 #photo {
@@ -80,17 +81,17 @@ a {
 }
 
 #title span:before {
-	content: url('quote_open.png');
+	content: url('../img/quote_open.png');
 }
 
 #title span:after {
-	content: url('quote_close.png');
+	content: url('../img/quote_close.png');
 }
 
 #title h1 {
 	float: right;
 	color: white;
-	background-image: url('banner.png');
+	background-image: url('../img/banner.png');
 	background-repeat: no-repeat;
 	font-size: 16pt;
 	font-weight: normal;
@@ -123,7 +124,7 @@ section {
 
 section h2 {
 	/*background-color: rgb(33,88,104);
-	 border: thin solid #DAEEF3;*/
+	border: thin solid #DAEEF3;*/
 	color: white;
 	border-top-left-radius: 5px;
 	border-bottom-right-radius: 5px;
@@ -144,18 +145,18 @@ section ul {
 }
 
 #hobbies ul {
-	list-style-image: url('like.png');
+	list-style-image: url('../img/like.png');
 	list-style-position: inside;
 	padding: 0;
 	margin: 5px;
 }
 
 #projects ul {
-	list-style-image: url('2.png');
+	list-style-image: url('../img/2.png');
 }
 
 #languages_skills ul {
-	list-style-image: url('1.png');
+	list-style-image: url('../img/1.png');
 }
 
 section h3 {
@@ -237,4 +238,45 @@ section .dates span {
 
 #languages_skills {
 	font-size: 10pt;
+}
+
+
+#social {
+	position: absolute;
+	margin: 20px 20px;
+	opacity: 0.5;
+}
+
+#social-content {
+	text-align: center;
+	padding: 5px;
+
+
+	background-color: white;
+	border: 1px solid #999;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+
+}
+
+#social ul {
+	list-style: none;
+	margin: 5px;
+	padding: 0;
+}
+
+#social ul li.inline {
+	display: inline;
+}
+
+#social img.social {
+	margin: 2px;
+}
+
+#social img.social:hover {
+	-webkit-box-shadow: -3px -3px 7px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: -3px -3px 7px rgba(0, 0, 0, 0.3);
+	box-shadow: -3px -3px 7px rgba(0, 0, 0, 0.3);
 }
