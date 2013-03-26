@@ -6,7 +6,8 @@ body {
 }
 
 #page {
-	width: 21cm;
+	margin: 0;
+	width: 20cm;
 	height: 29.7cm;
 	background-color: white;
 	color: #403D3A;
@@ -14,7 +15,8 @@ body {
 	left: 50%;
 	margin-left: -10.5cm;
 	/*text-align:justify;*/
-	padding-top: 20px;
+	/*padding-top: 20px;*/
+	padding: 0.2cm 0.5cm;
 }
 
 a {
@@ -34,32 +36,43 @@ a {
 	float: left;
 	padding: 5px;
 	margin: 0 1cm;
+	list-style: none;
 }
 
 #details li {
-	padding: 1px;
+	padding: 2px;
+	padding-left: 25px;
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+	line-height: 16px;
 }
 
 #phone {
-	list-style-image: url('../img/phone_2.png')
+	background-image: url('../img/phone_2.png');
+	-webkit-print-color-adjust:exact;
+
 }
 
 #address {
-	list-style-image: url('../img/home.png')
+	background-image: url('../img/home.png');
+	-webkit-print-color-adjust:exact;
 }
 
 #mail {
-	list-style-image: url('../img/mail.png')
+	background-image: url('../img/mail.png');
+	-webkit-print-color-adjust:exact;
+
 }
 
 #info {
-	list-style-image: url('../img/user_silhouette.png')
+	background-image: url('../img/user_silhouette.png');
+	-webkit-print-color-adjust:exact;
 }
 
 #photo {
 	position: absolute;
 	top: 0.2cm;
-	right: 0.2cm;
+	right: 0.7cm;
 }
 
 #photo img {
@@ -95,21 +108,24 @@ a {
 	background-repeat: no-repeat;
 	font-size: 16pt;
 	font-weight: normal;
-	width: 550px;
+	width: 520px;
 	height: 50px;
 	padding-left: 35px;
 	padding-top: 18px;
 	font-variant: small-caps;
-	margin-bottom: 5px;
+	margin-bottom: 0px;
+	-webkit-print-color-adjust:exact;
 }
 
 #left-col {
 	float: left;
-	width: 9cm;
+	/*width: 9cm;*/
+	width: 43%;
 }
 
 #right-col {
-	width: 12cm;
+	/*width: 12cm;*/
+	width: 57%;
 	float: right;
 }
 
@@ -120,6 +136,7 @@ section {
 	position:relative;
 	text-align: justify;
 	padding-right:5px;
+	font-size: 0.9em;
 }
 
 section h2 {
@@ -138,6 +155,7 @@ section h2 {
 	background: -o-linear-gradient(left,  rgba(33,88,104,1) 0%,rgba(33,88,104,1) 1%,rgba(87,128,141,1) 25%,rgba(255,255,255,0) 99%);
 	background: -ms-linear-gradient(left,  rgba(33,88,104,1) 0%,rgba(33,88,104,1) 1%,rgba(87,128,141,1) 25%,rgba(255,255,255,0) 99%);
 	background: linear-gradient(to right,  rgba(33,88,104,1) 0%,rgba(33,88,104,1) 1%,rgba(87,128,141,1) 25%,rgba(255,255,255,0) 99%);
+	-webkit-print-color-adjust:exact;
 }
 
 section ul {
@@ -162,6 +180,7 @@ section ul {
 section h3 {
 	font-size: 12pt;
 	font-weight: normal;
+	margin: 13px 0;
 }
 
 section h3 .smaller {
@@ -208,11 +227,11 @@ section .dates-full {
 }
 
 #educ-dates {
-	top: 13cm;
+	top: 14cm;
 }
 
 #working-dates {
-	top: 8.5cm;
+	top: 9.5cm;
 	width: 9cm;
 }
 
@@ -228,16 +247,18 @@ section .dates-full {
 	background-color: #403D3A;
 	color: white;
 	padding: 0px 5px 1px 6px;
+	-webkit-print-color-adjust:exact;
 }
 
 section .dates span {
 	background-color: #403D3A;
 	color: white;
 	padding: 2px;
+	-webkit-print-color-adjust:exact;
 }
 
 #languages_skills {
-	font-size: 10pt;
+	font-size: 8pt;
 }
 
 
@@ -250,8 +271,6 @@ section .dates span {
 #social-content {
 	text-align: center;
 	padding: 5px;
-
-
 	background-color: white;
 	border: 1px solid #999;
 	border: 1px solid rgba(0, 0, 0, 0.3);
