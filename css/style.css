@@ -1,8 +1,10 @@
 body {
-	font-family: Tahoma, Geneva, Verdana;
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: Tahoma, Geneva, Verdana;*/
 	background-color: black;
 	padding: 0;
 	margin: 0;
+	font-weight: 300;
 }
 
 #page {
@@ -14,7 +16,7 @@ body {
 	position: absolute;
 	left: 50%;
 	margin-left: -10.5cm;
-	/*text-align:justify;*/
+	text-align:justify;
 	/*padding-top: 20px;*/
 	padding: 0.2cm 0.5cm;
 }
@@ -25,6 +27,7 @@ a {
 
 #name {
 	font-size: 24pt;
+	font-weight: 700;
 	color: rgb(33,88,104);
 	padding: 5px;
 	float: left;
@@ -67,6 +70,11 @@ a {
 #info {
 	background-image: url('../img/user_silhouette.png');
 	-webkit-print-color-adjust:exact;
+}
+
+#website {
+	background-image: url('../img/url.png');
+	-webkit-print-color-adjust:exact;	
 }
 
 #photo {
@@ -134,8 +142,8 @@ section {
 	margin: 0.2cm;
 	margin-top: 0.8cm;
 	position:relative;
-	text-align: justify;
-	padding-right:5px;
+	/*text-align: justify;*/
+	padding-right:12px;
 	font-size: 0.9em;
 }
 
@@ -180,11 +188,14 @@ section ul {
 section h3 {
 	font-size: 12pt;
 	font-weight: normal;
-	margin: 13px 0;
+	margin: 10px 0 5px 0;
 }
 
-section h3 .smaller {
+section .righter {
+	text-align: right;
 	font-size: 7pt;
+	top: -2px;
+	position: relative;
 }
 
 section p {
@@ -192,75 +203,34 @@ section p {
 	margin: 5px 0;
 }
 
-section .dates {
-	writing-mode: tb-rl;
-	transform: rotate(-90deg);
-	-webkit-transform: rotate(-90deg);
-	-moz-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
-	transform-origin: 0 0;
-	-webkit-transform-origin: 0 0;
-	-moz-transform-origin: 0 0;
-	-o-transform-origin: 0 0;
-	white-space: nowrap;
-	/*	text-shadow: 0px 0px 1px #333; */
-	left: -30px;
-	font-size: 8pt;
-	position: relative;
-	display: none;
+section ul .date:first-child {
+	top:40px;
+	width: 40px;
+	margin-left:10px;
 }
 
-section .dates-full {
-	writing-mode: tb-rl;
-	transform: rotate(-90deg);
-	-webkit-transform: rotate(-90deg);
-	-moz-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
-	transform-origin: 0 0;
-	-webkit-transform-origin: 0 0;
-	-moz-transform-origin: 0 0;
-	-o-transform-origin: 0 0;
-	white-space: nowrap;
-	font-size: 10pt;
+section ul .date {
 	position: absolute;
-	left: 0.2cm;
-}
-
-#educ-dates {
-	top: 14cm;
-}
-
-#working-dates {
-	top: 9.5cm;
-	width: 9cm;
-}
-
-#working-dates span {
-	margin: 0px 4px;
-}
-
-#educ-dates span {
-	margin: 0px 20px;
-}
-
-.dates-full span {
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	left: -16px;
+	width: 60px;
+	text-align: center;
 	background-color: #403D3A;
 	color: white;
 	padding: 0px 5px 1px 6px;
-	-webkit-print-color-adjust:exact;
+	-webkit-print-color-adjust: exact;
 }
 
-section .dates span {
-	background-color: #403D3A;
-	color: white;
-	padding: 2px;
-	-webkit-print-color-adjust:exact;
+section ul .date:last-child {
+	bottom:40px;
 }
 
 #languages_skills {
 	font-size: 8pt;
 }
-
 
 #social {
 	position: absolute;
