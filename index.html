@@ -53,8 +53,8 @@
 							<p data-fr="Programme d'échange international, Master des technologies de l'information">
 								Engineering Master Exchange student, Master of Information Technology
 							</p>
-							<p data-fr="Matières principales : Technologies et stratégies de l'innovation, Systèmes d'information Web, Analyse de Bases de données, Ingénierie Logicielle, Web Design">
-								Significant Courses: Technology and Innovation Strategy, Web Information Systems, Database Analysis, Software Engineering Studio, Web Design
+							<p data-fr="Technologies et stratégies de l'innovation, Systèmes d'information Web, Analyse de Bases de données, Ingénierie Logicielle, Web Design">
+								Technology and Innovation Strategy, Web Information Systems, Database Analysis, Software Engineering Studio, Web Design
 							</p>
 						</li>
 						<div class="date">2009 >></div>
@@ -65,8 +65,7 @@
 							<p data-fr="Diplôme d'ingénieur en Télécommunication, Filière multimédia">
 								Master of Engineering, Telecommunication engineering, Multimedia Track
 							</p>
-							<p data-fr="Matières principales : Image, Traitement du son et de l'image, Théorie de l'information, Mathematiques de l'ingénieur, Réseaux, Développement Logiciel, Applications Web">
-								Significant Courses:
+							<p data-fr="Traitement du son, de la vidéo et de l'image, Réseaux, Développement Logiciel, Applications Web">
 								Image, Sound and Video Processing, Information Theory, Mathematics for Engineers, Network, Software development, Internet Applications
 							</p>
 						</li>
@@ -77,8 +76,7 @@
 							<p data-fr="Diplôme d'ingénieur en Télécommunication">
 								Master of Engineering, Telecommunication engineering
 							</p>
-							<p data-fr="Matières principales: Probabilités, Language C et Java, Electronique, Traitement du signal, Optimisation, Théorie des langages de programmation">
-								Significant Courses:
+							<p data-fr="Probabilités, Language C et Java, Electronique, Traitement du signal, Optimisation, Théorie des langages de programmation">
 								Probabilities, C and Java Programming, Electronics, Signal Processing, Optimization, Programming Language Theory
 							</p>
 						</li>
@@ -249,7 +247,7 @@
 				<li><a href="http://stackoverflow.com/users/1620081/augustin-riedinger" target="_blank"><img src="img/stackoverflow.png" alt="Stackoverflow" class="social"/></a></li>
 			</ul>
 			<ul>
-				<li><a href="CV Augustin Riedinger English.pdf"><img src="img/pdf.png" alt="Download as Pdf" class="social" /></a>
+				<li><a href="CV-Augustin-Riedinger-English.pdf" data-fr-href="CV-Augustin-Riedinger-French.pdf"><img src="img/pdf.png" alt="Download as Pdf" class="social" /></a>
 				</li>
 			</ul>
 			<ul>
@@ -281,6 +279,13 @@
 					.attr('data-'+current_lang, $(el).text())
 					.html($(this).attr('data-'+lang));
 			});
+
+			$('[data-'+lang+'-href]').each(function(i, el) {
+				$(el)
+					.attr('data-'+current_lang+'-href', $(el).attr('href'))
+					.attr('href', $(el).attr('data-'+lang+'-href'))
+			});
+
 			current_lang = lang;
 		});
 

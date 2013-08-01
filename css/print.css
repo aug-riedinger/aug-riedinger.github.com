@@ -9,3 +9,7 @@ body {
 #page {
 	height: 29.7cm;
 }
+
+#content {
+  top: -20px;
+}
