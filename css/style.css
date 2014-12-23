@@ -185,17 +185,28 @@ section ul {
 	list-style-image: url('../img/1.png');
 }
 
+/*#left-col section h3 {
+	font-size: 11pt;
+}
+*/
 section h3 {
 	font-size: 12pt;
 	font-weight: normal;
 	margin: 10px 0 5px 0;
+	text-align: left;
+}
+
+#education h3 {
+	font-size: 11pt;
 }
 
 section .righter {
+	float: right;
 	text-align: right;
 	font-size: 7pt;
-	top: -2px;
+	/*top: -2px;*/
 	position: relative;
+	max-width: 85px;
 }
 
 section p {
