@@ -6,10 +6,14 @@ body {
 	display: none;
 }
 
-#page {
-	height: 29.7cm;
+/*#page {
+	height: 27cm;
 }
-
+*/
 #content {
   top: -20px;
+}
+
+section h2 {
+  background: rgba(33,88,104,1);
 }
