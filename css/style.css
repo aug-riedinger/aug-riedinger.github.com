@@ -10,7 +10,7 @@ body {
 #page {
 	margin: 0;
 	width: 20cm;
-	height: 29cm;
+	height: 27.9cm;
 	background-color: white;
 	color: #403D3A;
 	position: absolute;
@@ -19,6 +19,10 @@ body {
 	text-align:justify;
 	/*padding-top: 20px;*/
 	padding: 0.2cm 0.5cm;
+}
+
+#content {
+	float: left;
 }
 
 a {
@@ -128,13 +132,25 @@ a {
 	-webkit-print-color-adjust:exact;
 }
 
-#left-col {
+.one-third {
+	float: left;
+	/*width: 9cm;*/
+	width: 23%;
+}
+
+.two-third {
+	float: left;
+	/*width: 9cm;*/
+	width: 67%;
+}
+
+.left-col {
 	float: left;
 	/*width: 9cm;*/
 	width: 43%;
 }
 
-#right-col {
+.right-col {
 	/*width: 12cm;*/
 	width: 57%;
 	float: right;
@@ -143,11 +159,12 @@ a {
 section {
 	border: thin dotted rgb(33,88,104);
 	margin: 0.2cm;
-	margin-top: 0.8cm;
-	position:relative;
+	margin-top: 0.5cm;
+	position: relative;
 	/*text-align: justify;*/
-	padding-right:12px;
+	padding-right: 12px;
 	font-size: 0.9em;
+	float: left;
 }
 
 section h2 {
@@ -196,7 +213,7 @@ section ul {
 section h3 {
 	font-size: 12pt;
 	font-weight: normal;
-	margin: 10px 0 5px 0;
+	margin: 7px 0 5px 0;
 	text-align: left;
 }
 
@@ -362,4 +379,57 @@ section ul .date {
 	-webkit-box-shadow: -3px -3px 7px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: -3px -3px 7px rgba(0, 0, 0, 0.3);
 	box-shadow: -3px -3px 7px rgba(0, 0, 0, 0.3);
+}
+
+#working_experience ul {
+	list-style: square;
+	padding-left: 33px;
+}
+#working_experience ul li {
+	min-height: 65px;
+}
+
+#working_experience ul ul {
+	list-style: none;
+	padding-left: 12px;
+}
+
+#working_experience ul ul li:before{ content:"-"; position:relative; left:-5px;}
+#working_experience ul ul li{ text-indent:-5px; }
+
+#working_experience ul ul li {
+	min-height: 0 ;
+}
+
+#working_experience .inline-date {
+background-color: #403D3A;
+color: white;
+padding: 0px 5px 1px 6px;
+width: 170px;
+font-size: 0.9em;
+left: 0;
+text-align: center;
+float: right;
+height: 18px;
+}
+/*#working_experience .inline-date {
+	background-color: #403D3A;
+	color: white;
+	padding: 0px 5px 1px 6px;
+	width: 49px;
+	border-radius: 5px;
+	font-size: 0.7em;
+	-webkit-transform: rotate(-90deg);
+	position: absolute;
+	left: 0;
+	text-align: center;
+	margin-top: 19px;
+}
+*/
+#working_experience p {
+font-size: 10pt;
+}
+
+#languages_skills ul {
+	font-size: 0.8em;
 }
