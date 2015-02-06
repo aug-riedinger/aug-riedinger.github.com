@@ -21,7 +21,8 @@ body {
   float: left; }
 
 a {
-  color: #4bacc6; }
+  color: #4bacc6;
+  text-decoration: none; }
 
 .no-justify {
   text-align: left; }
