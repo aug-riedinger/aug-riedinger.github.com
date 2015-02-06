@@ -10,6 +10,10 @@ body {
   top: -20px;
 }
 
+section {
+  border: thin solid rgba(33,88,104, 0.5);
+}
+
 section h2 {
   background: rgba(33,88,104,1);
 }
